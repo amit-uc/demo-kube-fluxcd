@@ -1,0 +1,17 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: fluent-bit
+  namespace: logging
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: semver:~1.3
+spec:
+  releaseName: fluent-bit
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: fluent-bit
+    version: 1.3.5
+  values:
+    image:
+      tag: 1.3.5

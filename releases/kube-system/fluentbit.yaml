@@ -5,13 +5,13 @@ metadata:
   namespace: logging
   annotations:
     fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: semver:~1.3
+    fluxcd.io/tag.chart-image: semver:~2.8
 spec:
   releaseName: fluent-bit
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: stable/fluent-bit
-    version: 1.3.5
+    version: 2.8.5
   values:
     image:
       tag: 1.3.5

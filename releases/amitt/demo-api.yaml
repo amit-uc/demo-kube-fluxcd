@@ -12,7 +12,7 @@ spec:
   chart:
     repository: http://192.168.1.79:8080
     name: demo-api
-    version: 1.1.1
+    version: 1.1.2
   #values:
   #  image:
   #    fluent_bit:

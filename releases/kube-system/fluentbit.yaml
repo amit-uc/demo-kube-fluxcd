@@ -12,6 +12,6 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: fluent-bit
     version: 2.8.5
-  values:
-    image:
-      tag: 1.3.5
+#   values:
+#     image:
+#       tag: 1.3.5

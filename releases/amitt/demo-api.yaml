@@ -5,6 +5,7 @@ metadata:
   namespace: amitt
   annotations:
     fluxcd.io/automated: "true"
+    flux.weave.works/automated: "true"
     #fluxcd.io/tag.chart-image: semver:~2.8
 spec:
   releaseName: demo-api

@@ -18,3 +18,13 @@ spec:
     image:
       repository: amithapa/techmang3-api
       tag: 1.16.11
+      ports:
+        - containerPort: 5555
+          name: p-flower
+      commandArgs:
+        command: ["flower", "--broker", "amqp://$(RABBITMQ_USER):$(RABBITMQ_PASS)@service-rabbitmq:5672//", "--max_tasks=200"]
+      envSecret:
+        - name: RABBITMQ_USER # key from the secret
+          key: username # name for the field for env variable
+        - name: RABBITMQ_PASS # key from the secret
+          key: password # name for the field for env variable

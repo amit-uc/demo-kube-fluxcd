@@ -17,4 +17,4 @@ spec:
   values:
     image:
       repository: amithapa/techmang3-api
-      tag: 1.16.10
+      tag: 1.16.11
